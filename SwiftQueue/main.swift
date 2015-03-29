@@ -8,5 +8,16 @@
 
 import Foundation
 
-println("Hello, World!")
+let queue = SwiftQueue()
+
+queue.enqueue("first in")
+queue.enqueue("second in")
+queue.enqueue("third in")
+
+
+while(!queue.isEmpty()) {
+    queue.dequeue()
+}
+
+
 
